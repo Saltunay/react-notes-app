@@ -11,3 +11,93 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn {
+  padding: 12px 36px;
+  background: #012;
+  color: #f8f8f8;
+  border: thin solid;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.new-note {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+}
+
+.form {
+  position: fixed;
+  box-shadow: 0 0 8px -2px #000;
+  border-radius: 6px;
+  padding: 24px;
+  background: #f8f8f8;
+  width: 420px;
+  top: 48px;
+  left: 50%;
+  margin-left: -210px;
+}
+
+input {
+  padding: 12px;
+  width: 100%;
+  margin: 0 0 8px 0;
+  outline: none;
+  border-radius: 4px;
+  border: thin solid;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 0 0 8px 0;
+  border-radius: 4px;
+  outline: none;
+  border: thin solid;
+  min-height: 90px;
+  resize: none;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 8px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 24px
+}
+
+.item {
+  width: 320px;
+  overflow: hidden;
+  height: 180px;
+  border: thin solid #ddd;
+  margin: 0 12px 12px 0;
+  border-radius: 6px;
+}
+
+.item div {
+  height: calc(100% - 31px);
+  overflow: auto;
+  white-space: normal;
+  width: 100%;
+  display: block;
+}
